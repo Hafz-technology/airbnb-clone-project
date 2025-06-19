@@ -204,8 +204,6 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
 * CI/CD Pipelines: Automated pipelines for testing and deploying code changes.
 
 ## Database Design
-* Indexing: Implement indexes for fast retrieval of frequently accessed data.
-* Caching: Use caching strategies to reduce database load and improve performance.
 
 ### key entities:
 
@@ -329,6 +327,40 @@ Booking and Payment (1:1):<br>
 * Each Payment is associated with one Booking.
 * (Foreign Key: Payment.booking_id refers to Booking.id) <br>
 <br>
+
+## Feature Breakdown
+
+List the main features (e.g., user management, property management, booking system, etc.) as outlined in the project overview.
+
+Provide a 2-3 sentence description of each feature, explaining how it contributes to the project.
+
+1. API Documentation<br>
+OpenAPI Standard: The backend APIs are documented using the OpenAPI standard to ensure clarity and ease of integration.
+Django REST Framework: Provides a comprehensive RESTful API for handling CRUD operations on user and property data.
+GraphQL: Offers a flexible and efficient query mechanism for interacting with the backend.
+2. User Authentication<br>
+Endpoints: /users/, /users/{user_id}/
+Features: Register new users, authenticate, and manage user profiles.
+3. Property Management<br>
+Endpoints: /properties/, /properties/{property_id}/
+Features: Create, update, retrieve, and delete property listings.
+4. Booking System<br>
+Endpoints: /bookings/, /bookings/{booking_id}/
+Features: Make, update, and manage bookings, including check-in and check-out details.
+5. Payment Processing<br>
+Endpoints: /payments/
+Features: Handle payment transactions related to bookings.
+6. Review System<br>
+Endpoints: /reviews/, /reviews/{review_id}/
+Features: Post and manage reviews for properties.
+7. Database Optimizations<br>
+Indexing: Implement indexes for fast retrieval of frequently accessed data.
+Caching: Use caching strategies to reduce database load and improve performance.
+
+
+
+
+
 
 
 

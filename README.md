@@ -29,7 +29,7 @@ This project is a full-stack clone of the popular accommodation booking platform
 * Secure checkout process<br>
 * User authentication<br>
 
-### Primary Pages:-
+### Primary Pages
 Page	Description<br>
 * Property Listing View: 	Grid display of available properties with filters<br>
 * Listing Detailed View:	Complete property details with images and booking form<br>

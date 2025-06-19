@@ -81,6 +81,42 @@ In essence, identifying design properties of a mockup transforms an abstract ide
 
 
 ## Project Roles and Responsibilities
+<table> 
+<tr>
+  <td> Role </td>
+  <td> Responsibilities </td>
+</tr>
+  <tr>
+    <td>Project Manager</td>
+    <td>Oversees timeline, coordinates team, manages deliverables</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+
 Role                          	Responsibilities<br>
 Project Manager:     	Oversees timeline, coordinates team, manages deliverables<br>
 Frontend Developers:	Implements UI components, ensures responsive design<br>

@@ -150,19 +150,19 @@ In essence, identifying design properties of a mockup transforms an abstract ide
 
 ## UI Component Patterns
 Planned Components<br>
-Navbar<br>
+1-Navbar<br>
 
 Logo<br>
 Search bar<br>
 User navigation<br>
 Responsive menu<br>
-Property Card<br>
+2-Property Card<br>
 
 Property image<br>
 Basic details (price, location, rating)<br>
 Favorite button<br>
 Responsive layout<br>
-Footer<br>
+3-Footer<br>
 
 Site links<br>
 Company information<br>

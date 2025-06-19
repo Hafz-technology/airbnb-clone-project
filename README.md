@@ -17,7 +17,7 @@ Design Tools: Figma for UI/UX design<br>
 
 ## UI/UX Design Planning
 
-###Design Goals:-
+### Design Goals:-
 Create intuitive booking flow<br>
 Maintain visual consistency<br>
 Ensure fast loading times<br>
@@ -65,9 +65,20 @@ A well-designed booking system reduces friction in the user journey, increases c
 </table>
 
 ### Typography:
-Primary Font: Circular, Medium (500), 16px<br>
-Headings: Circular, Bold (700), 24px-32px<br>
-Secondary Text: Circular, Book (400), 14px<br>
+<table>
+  <tr>
+    <td>Primary Font</td>
+    <td>Circular, Medium (500), 16px</td>
+  </tr>
+  <tr>
+    <td>Headings</td>
+    <td>Circular, Bold (700), 24px-32px</td>
+  </tr>
+  <tr>
+    <td>Secondary Text</td>
+    <td>Circular, Book (400), 14px</td>
+  </tr>
+</table>
 
 
 ### the importance of identifying design properties of a mock up design

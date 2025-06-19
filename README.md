@@ -209,7 +209,7 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
 
 ### key entities:
 
-1. User
+1. User<br>
 The User entity represents individuals who interact with the platform, whether as guests or hosts.<br>
 
 Important Fields:<br>
@@ -222,68 +222,72 @@ Important Fields:<br>
 * profile_picture_url (String, Optional): URL to the user's profile picture.
 * is_host (Boolean, Default: False): Indicates if the user can list properties.
   <br>
-2. Property
-The Property entity represents the accommodations that hosts list on the platform.
+2. Property<br>
+The Property entity represents the accommodations that hosts list on the platform.<br>
 
-Important Fields:
-id (Primary Key, UUID): Unique identifier for the property.
-host_id (Foreign Key to User.id): The user who owns/hosts this property.
-title (String): A descriptive title for the property.
-description (Text): Detailed description of the property.
-address (String): Full address of the property.
-city (String): City where the property is located.
-country (String): Country where the property is located.
-latitude (Decimal, Optional): Geographical latitude for mapping.
-longitude (Decimal, Optional): Geographical longitude for mapping.
-price_per_night (Decimal): The cost to book the property for one night.
-number_of_guests (Integer): Maximum number of guests the property can accommodate.
-number_of_bedrooms (Integer): Number of bedrooms in the property.
-number_of_beds (Integer): Number of beds in the property.
-number_of_bathrooms (Decimal): Number of bathrooms in the property (can be half baths).
-amenities (Array of Strings/JSONB): List of available amenities (e.g., Wi-Fi, kitchen, pool).
-image_urls (Array of Strings/JSONB): URLs to property images.
-property_type (String, e.g., 'Apartment', 'House', 'Treehouse'): Type of accommodation.
-status (String, e.g., 'Available', 'Unlisted'): Current listing status.
-3. Booking
-The Booking entity represents a confirmed reservation of a property by a guest.
+Important Fields:<br>
+* id (Primary Key, UUID): Unique identifier for the property.
+* host_id (Foreign Key to User.id): The user who owns/hosts this property.
+* title (String): A descriptive title for the property.
+* description (Text): Detailed description of the property.
+* address (String): Full address of the property.
+* city (String): City where the property is located.
+* country (String): Country where the property is located.
+* latitude (Decimal, Optional): Geographical latitude for mapping.
+* longitude (Decimal, Optional): Geographical longitude for mapping.
+* price_per_night (Decimal): The cost to book the property for one night.
+* number_of_guests (Integer): Maximum number of guests the property can accommodate.
+* number_of_bedrooms (Integer): Number of bedrooms in the property.
+* number_of_beds (Integer): Number of beds in the property.
+* number_of_bathrooms (Decimal): Number of bathrooms in the property (can be half baths).
+* amenities (Array of Strings/JSONB): List of available amenities (e.g., Wi-Fi, kitchen, pool).
+* image_urls (Array of Strings/JSONB): URLs to property images.
+* property_type (String, e.g., 'Apartment', 'House', 'Treehouse'): Type of accommodation.
+* status (String, e.g., 'Available', 'Unlisted'): Current listing status.
+  <br>
+3. Booking<br>
+The Booking entity represents a confirmed reservation of a property by a guest.<br>
 
-Important Fields:
-id (Primary Key, UUID): Unique identifier for the booking.
-guest_id (Foreign Key to User.id): The user who made the booking.
-property_id (Foreign Key to Property.id): The property being booked.
-check_in_date (Date): The date the guest checks in.
-check_out_date (Date): The date the guest checks out.
-total_price (Decimal): The total cost of the booking.
-number_of_guests (Integer): Number of guests included in this booking.
-status (String, e.g., 'Pending', 'Confirmed', 'Cancelled', 'Completed'): Current status of the booking.
-created_at (Timestamp): Timestamp when the booking was created.
-updated_at (Timestamp): Timestamp when the booking was last updated.
-4. Review
-The Review entity allows users to provide feedback on properties and hosts after a booking is completed.
+Important Fields:<br>
+* id (Primary Key, UUID): Unique identifier for the booking.
+* guest_id (Foreign Key to User.id): The user who made the booking.
+* property_id (Foreign Key to Property.id): The property being booked.
+* check_in_date (Date): The date the guest checks in.
+* check_out_date (Date): The date the guest checks out.
+* total_price (Decimal): The total cost of the booking.
+* number_of_guests (Integer): Number of guests included in this booking.
+* status (String, e.g., 'Pending', 'Confirmed', 'Cancelled', 'Completed'): Current status of the booking.
+* created_at (Timestamp): Timestamp when the booking was created.
+* updated_at (Timestamp): Timestamp when the booking was last updated.
+  <br>
+4. Review<br>
+The Review entity allows users to provide feedback on properties and hosts after a booking is completed.<br>
 
-Important Fields:
-id (Primary Key, UUID): Unique identifier for the review.
-reviewer_id (Foreign Key to User.id): The user who wrote the review.
-property_id (Foreign Key to Property.id): The property being reviewed.
-booking_id (Foreign Key to Booking.id, Optional): The specific booking associated with the review (could be direct to property, but booking adds context).
-rating (Integer, 1-5): Star rating for the property/experience.
-comment (Text): Detailed written feedback.
-created_at (Timestamp): Timestamp when the review was created.
-5. Payment
-The Payment entity handles the financial transactions for bookings.
+Important Fields:<br>
+* id (Primary Key, UUID): Unique identifier for the review.
+* reviewer_id (Foreign Key to User.id): The user who wrote the review.
+* property_id (Foreign Key to Property.id): The property being reviewed.
+* booking_id (Foreign Key to Booking.id, Optional): The specific booking associated with the review (could be direct to property, but booking adds context).
+* rating (Integer, 1-5): Star rating for the property/experience.
+* comment (Text): Detailed written feedback.
+* created_at (Timestamp): Timestamp when the review was created.
+  <br>
+5. Payment<br>
+The Payment entity handles the financial transactions for bookings.<br>
 
-Important Fields:
-id (Primary Key, UUID): Unique identifier for the payment.
-booking_id (Foreign Key to Booking.id): The booking this payment is for.
-payer_id (Foreign Key to User.id): The user making the payment (usually the guest).
-amount (Decimal): The amount of money paid.
-currency (String, e.g., 'USD', 'EUR'): Currency of the payment.
-payment_method (String, e.g., 'Credit Card', 'PayPal'): Method used for payment.
-transaction_id (String): Unique ID from the payment gateway (e.g., Stripe, PayPal).
-status (String, e.g., 'Pending', 'Completed', 'Failed', 'Refunded'): Current status of the payment.
-payment_date (Timestamp): Date and time the payment was processed.
-Entity Relationships:
-Here's how these entities are related, often described in terms of one-to-many (1:M) or many-to-many (M:M) relationships:
+Important Fields:<br>
+* id (Primary Key, UUID): Unique identifier for the payment.
+* booking_id (Foreign Key to Booking.id): The booking this payment is for.
+* payer_id (Foreign Key to User.id): The user making the payment (usually the guest).
+* amount (Decimal): The amount of money paid.
+* currency (String, e.g., 'USD', 'EUR'): Currency of the payment.
+* payment_method (String, e.g., 'Credit Card', 'PayPal'): Method used for payment.
+* transaction_id (String): Unique ID from the payment gateway (e.g., Stripe, PayPal).
+* status (String, e.g., 'Pending', 'Completed', 'Failed', 'Refunded'): Current status of the payment.
+* payment_date (Timestamp): Date and time the payment was processed.
+  <br>
+Entity Relationships:<br>
+Here's how these entities are related, often described in terms of one-to-many (1:M) or many-to-many (M:M) relationships:<br>
 
 User and Property (1:M):
 

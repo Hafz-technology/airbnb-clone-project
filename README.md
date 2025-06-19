@@ -356,10 +356,7 @@ Booking and Payment (1:1):<br>
 
 
 ## API Security
- Explain the key security measures that will be implemented (e.g., authentication, authorization, rate limiting).
-
-Provide a brief explanation of why security is crucial for each key area of the project (e.g., protecting user data, securing payments, etc.).
-
+ 
 ### API Security Measures:
 * Authentication: Users will be authenticated using secure token-based methods (e.g., JWTs) to verify their identity before granting access to any resources.
 * Authorization: Role-Based Access Control (RBAC) will be implemented to ensure users can only access data and perform actions consistent with their assigned roles (e.g., hosts manage their properties, guests manage their bookings).

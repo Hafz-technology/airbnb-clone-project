@@ -3,11 +3,11 @@
 This project is a full-stack clone of the popular accommodation booking platform AirBnB. The goal is to build a functional web application that allows users to browse property listings, view detailed property information, and complete bookings. The project will cover frontend development, backend APIs, database design, and deployment.
 
 ## project goals
-+Learn to implement responsive UI/UX designs<br>
-*Understand how to structure a complex web application<br>
--Practice working in a team with defined roles<br>
-*Develop skills in component-based frontend architecture<br>
-*Learn best practices for web application development<br>
+Learn to implement responsive UI/UX designs<br>
+Understand how to structure a complex web application<br>
+Practice working in a team with defined roles<br>
+Develop skills in component-based frontend architecture<br>
+Learn best practices for web application development<br>
 
 ## the tech stack
 Frontend: HTML, CSS, JavaScript (React or similar framework)<br>
@@ -91,41 +91,34 @@ In essence, identifying design properties of a mockup transforms an abstract ide
     <td>Oversees timeline, coordinates team, manages deliverables</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>Frontend Developers</td>
+    <td>Implements UI components, ensures responsive design</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>Backend Developers</td>
+    <td>Builds APIs, manages database, implements business logic</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>Designers</td>
+    <td>Creates mockups, maintains design system, ensures UX quality</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>QA/Testers</td>
+    <td>Writes test cases, performs testing, reports bugs</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>DevOps Engineers</td>
+    <td>Manages deployment, CI/CD pipeline, server infrastructure</td>
   </tr>
   <tr>
-    <td></td>
-    <td></td>
+    <td>Product Owner</td>
+    <td>Defines requirements, prioritizes features, represents stakeholders</td>
+  </tr>
+  <tr>
+    <td>Scrum Master</td>
+    <td>Facilitates agile processes, removes blockers, organizes meetings</td>
   </tr>
 </table>
-
-
-Role                          	Responsibilities<br>
-Project Manager:     	Oversees timeline, coordinates team, manages deliverables<br>
-Frontend Developers:	Implements UI components, ensures responsive design<br>
-Backend Developers:  	Builds APIs, manages database, implements business logic<br>
-Designers:	          Creates mockups, maintains design system, ensures UX quality<br>
-QA/Testers:	          Writes test cases, performs testing, reports bugs<br>
-DevOps Engineers:	    Manages deployment, CI/CD pipeline, server infrastructure<br>
-Product Owner:	      Defines requirements, prioritizes features, represents stakeholders<br>
-Scrum Master:       	Facilitates agile processes, removes blockers, organizes meetings<br>
 
 ## UI Component Patterns
 Planned Components<br>

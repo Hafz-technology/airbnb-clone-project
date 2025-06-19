@@ -41,11 +41,28 @@ A well-designed booking system reduces friction in the user journey, increases c
 ## UI/UX Design Planning
 
 ### Color Styles:
-Primary: #FF5A5F<br>
-Secondary: #008489<br>
-Background: #FFFFFF<br>
-Text: #222222<br>
-Secondary Text: #717171<br>
+<table>
+  <tr>
+    <td>Primary</td>
+    <td>#FF5A5F</td>
+  </tr>
+  <tr>
+    <td>Secondary</td>
+    <td>#008489</td>
+  </tr>
+  <tr>
+    <td>Background</td>
+    <td>#FFFFFF</td>
+  </tr>
+  <tr>
+    <td>Text</td>
+    <td>#222222</td>
+  </tr>
+  <tr>
+    <td>Secondary Text</td>
+    <td>#717171</td>
+  </tr>
+</table>
 
 ### Typography:
 Primary Font: Circular, Medium (500), 16px<br>
@@ -83,8 +100,8 @@ In essence, identifying design properties of a mockup transforms an abstract ide
 ## Project Roles and Responsibilities
 <table> 
 <tr>
-  <td> Role </td>
-  <td> Responsibilities </td>
+  <th> Role </th>
+  <th> Responsibilities </th>
 </tr>
   <tr>
     <td>Project Manager</td>

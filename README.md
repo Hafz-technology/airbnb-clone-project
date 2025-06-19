@@ -329,7 +329,7 @@ Booking and Payment (1:1):<br>
 * Each Payment is associated with one Booking.
 * (Foreign Key: Payment.booking_id refers to Booking.id) <br>
 <br>
-This blueprint provides a solid foundation for designing the database schema and API endpoints for your Airbnb-clone backend. You can expand upon these entities with more specialized fields and introduce additional entities as needed (e.g., Availability, Amenities, Notifications, Messages).
+
 
 
 

@@ -355,9 +355,21 @@ Booking and Payment (1:1):<br>
 * Caching: Use caching strategies to reduce database load and improve performance.
 
 
+## API Security
+ Explain the key security measures that will be implemented (e.g., authentication, authorization, rate limiting).
 
+Provide a brief explanation of why security is crucial for each key area of the project (e.g., protecting user data, securing payments, etc.).
 
-
+### API Security Measures:
+* Authentication: Users will be authenticated using secure token-based methods (e.g., JWTs) to verify their identity before granting access to any resources.
+* Authorization: Role-Based Access Control (RBAC) will be implemented to ensure users can only access data and perform actions consistent with their assigned roles (e.g., hosts manage their properties, guests manage their bookings).
+* Rate Limiting: Limits will be set on the number of requests a user or IP address can make within a specific timeframe to prevent abuse, brute-force attacks, and Denial of Service (DoS) attacks.
+* Data Encryption: All data transmitted between the client and server will be encrypted using HTTPS/TLS to protect against eavesdropping and man-in-the-middle attacks.
+* Input Validation: Strict input validation will be applied to all incoming data to prevent injection attacks (SQL, XSS) and ensure data integrity.
+### Why Security is Crucial:
+* Protecting User Data: Strong authentication and authorization, combined with data encryption, are vital to safeguard sensitive user information (personal details, contact information) from unauthorized access, ensuring privacy and preventing identity theft.
+* Securing Payments: Robust payment security (including tokenization and secure payment gateway integration) is paramount to protect users' financial details, prevent fraudulent transactions, build trust, and ensure compliance with financial regulations (e.g., PCI DSS).
+* Maintaining Platform Integrity: Rate limiting and input validation are essential to protect the platform itself from malicious attacks, ensuring the availability and reliability of services for all users and preventing data corruption.
 
 
 

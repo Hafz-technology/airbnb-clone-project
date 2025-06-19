@@ -322,12 +322,13 @@ Property and Review (1:M):<br>
 * Typically, a Booking can have at most one Review associated with it (a guest reviews that specific stay). However, some platforms might allow multiple reviews (e.g., if multiple guests from a booking review separately). For simplicity, a 1:1 or 1:0/1 (one booking can have zero or one review) is common.
 * (Foreign Key: Review.booking_id refers to Booking.id)
 
-
+<br>
 Booking and Payment (1:1):<br>
 
 * Each Booking typically has one corresponding Payment transaction for the full amount.
 * Each Payment is associated with one Booking.
-* (Foreign Key: Payment.booking_id refers to Booking.id)
+* (Foreign Key: Payment.booking_id refers to Booking.id) <br>
+<br>
 This blueprint provides a solid foundation for designing the database schema and API endpoints for your Airbnb-clone backend. You can expand upon these entities with more specialized fields and introduce additional entities as needed (e.g., Availability, Amenities, Notifications, Messages).
 
 

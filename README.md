@@ -286,43 +286,48 @@ Important Fields:<br>
 * status (String, e.g., 'Pending', 'Completed', 'Failed', 'Refunded'): Current status of the payment.
 * payment_date (Timestamp): Date and time the payment was processed.
   <br>
+  <br>
 Entity Relationships:<br>
 Here's how these entities are related, often described in terms of one-to-many (1:M) or many-to-many (M:M) relationships:<br>
 
-User and Property (1:M):
+User and Property (1:M):<br>
 
-A User can be a Host and list multiple Properties.
-Each Property belongs to exactly one User (the host).
-(Foreign Key: Property.host_id refers to User.id)
-User and Booking (1:M):
+* A User can be a Host and list multiple Properties.
+* Each Property belongs to exactly one User (the host).
+* (Foreign Key: Property.host_id refers to User.id)
+  <br>
+* User and Booking (1:M):
 
-A User can make multiple Bookings as a Guest.
-Each Booking is made by exactly one User (the guest).
-(Foreign Key: Booking.guest_id refers to User.id)
-Property and Booking (1:M):
+* A User can make multiple Bookings as a Guest.
+* Each Booking is made by exactly one User (the guest).
+* (Foreign Key: Booking.guest_id refers to User.id)
+* Property and Booking (1:M):
+<br>
+* A Property can have multiple Bookings.
+* Each Booking is for exactly one Property.
+* (Foreign Key: Booking.property_id refers to Property.id)
+* User and Review (1:M):
+<br>
+* A User can write multiple Reviews.
+* Each Review is written by exactly one User (the reviewer).
+* (Foreign Key: Review.reviewer_id refers to User.id)
+  <br>
+Property and Review (1:M):<br>
 
-A Property can have multiple Bookings.
-Each Booking is for exactly one Property.
-(Foreign Key: Booking.property_id refers to Property.id)
-User and Review (1:M):
+* A Property can receive multiple Reviews.
+* Each Review is for exactly one Property.
+* (Foreign Key: Review.property_id refers to Property.id)
+* Booking and Review (1:1 or 1:M depending on strictness):
+<br>
+* Typically, a Booking can have at most one Review associated with it (a guest reviews that specific stay). However, some platforms might allow multiple reviews (e.g., if multiple guests from a booking review separately). For simplicity, a 1:1 or 1:0/1 (one booking can have zero or one review) is common.
+* (Foreign Key: Review.booking_id refers to Booking.id)
 
-A User can write multiple Reviews.
-Each Review is written by exactly one User (the reviewer).
-(Foreign Key: Review.reviewer_id refers to User.id)
-Property and Review (1:M):
 
-A Property can receive multiple Reviews.
-Each Review is for exactly one Property.
-(Foreign Key: Review.property_id refers to Property.id)
-Booking and Review (1:1 or 1:M depending on strictness):
+Booking and Payment (1:1):<br>
 
-Typically, a Booking can have at most one Review associated with it (a guest reviews that specific stay). However, some platforms might allow multiple reviews (e.g., if multiple guests from a booking review separately). For simplicity, a 1:1 or 1:0/1 (one booking can have zero or one review) is common.
-(Foreign Key: Review.booking_id refers to Booking.id)
-Booking and Payment (1:1):
-
-Each Booking typically has one corresponding Payment transaction for the full amount.
-Each Payment is associated with one Booking.
-(Foreign Key: Payment.booking_id refers to Booking.id)
+* Each Booking typically has one corresponding Payment transaction for the full amount.
+* Each Payment is associated with one Booking.
+* (Foreign Key: Payment.booking_id refers to Booking.id)
 This blueprint provides a solid foundation for designing the database schema and API endpoints for your Airbnb-clone backend. You can expand upon these entities with more specialized fields and introduce additional entities as needed (e.g., Availability, Amenities, Notifications, Messages).
 
 

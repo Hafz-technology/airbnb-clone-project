@@ -210,17 +210,18 @@ The Airbnb Clone Project is a comprehensive, real-world application designed to 
 ### key entities:
 
 1. User
-The User entity represents individuals who interact with the platform, whether as guests or hosts.
+The User entity represents individuals who interact with the platform, whether as guests or hosts.<br>
 
-Important Fields:
-id (Primary Key, UUID): Unique identifier for the user.
-username (String, Unique): A unique identifier for login.
-email (String, Unique): User's email address, also used for login and communication.
-password_hash (String): Hashed password for security.
-first_name (String): User's first name.
-last_name (String): User's last name.
-profile_picture_url (String, Optional): URL to the user's profile picture.
-is_host (Boolean, Default: False): Indicates if the user can list properties.
+Important Fields:<br>
+* id (Primary Key, UUID): Unique identifier for the user.
+* username (String, Unique): A unique identifier for login.
+* email (String, Unique): User's email address, also used for login and communication.
+* password_hash (String): Hashed password for security.
+* first_name (String): User's first name.
+* last_name (String): User's last name.
+* profile_picture_url (String, Optional): URL to the user's profile picture.
+* is_host (Boolean, Default: False): Indicates if the user can list properties.
+  <br>
 2. Property
 The Property entity represents the accommodations that hosts list on the platform.
 

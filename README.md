@@ -152,22 +152,25 @@ In essence, identifying design properties of a mockup transforms an abstract ide
 Planned Components<br>
 1-Navbar<br>
 
-Logo<br>
-Search bar<br>
-User navigation<br>
-Responsive menu<br>
+* Logo<br>
+* Search bar<br>
+* User navigation<br>
+* Responsive menu<br>
+<br>
 2-Property Card<br>
 
-Property image<br>
-Basic details (price, location, rating)<br>
-Favorite button<br>
-Responsive layout<br>
+* Property image<br>
+* Basic details (price, location, rating)<br>
+* Favorite button<br>
+* Responsive layout<br>
+<br>
+
 3-Footer<br>
 
-Site links<br>
-Company information<br>
-Social media links<br>
-Copyright information<br>
+* Site links<br>
+* Company information<br>
+* Social media links<br>
+* Copyright information<br>
 Each component will be designed for reusability and consistency across the application.<br>
 
 

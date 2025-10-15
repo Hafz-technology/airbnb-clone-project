@@ -114,3 +114,45 @@ In essence, identifying design properties of a mockup transforms an abstract ide
 
 ********************************************************************************************************************************************************************
 
+
+## Project Roles and Responsibilities
+<table> 
+<tr>
+  <th> Role </th>
+  <th> Responsibilities </th>
+</tr>
+  <tr>
+    <td>Project Manager</td>
+    <td>Oversees timeline, coordinates team, manages deliverables</td>
+  </tr>
+  <tr>
+    <td>Frontend Developers</td>
+    <td>Implements UI components, ensures responsive design</td>
+  </tr>
+  <tr>
+    <td>Backend Developers</td>
+    <td>Builds APIs, manages database, implements business logic</td>
+  </tr>
+  <tr>
+    <td>Designers</td>
+    <td>Creates mockups, maintains design system, ensures UX quality</td>
+  </tr>
+  <tr>
+    <td>QA/Testers</td>
+    <td>Writes test cases, performs testing, reports bugs</td>
+  </tr>
+  <tr>
+    <td>DevOps Engineers</td>
+    <td>Manages deployment, CI/CD pipeline, server infrastructure</td>
+  </tr>
+  <tr>
+    <td>Product Owner</td>
+    <td>Defines requirements, prioritizes features, represents stakeholders</td>
+  </tr>
+  <tr>
+    <td>Scrum Master</td>
+    <td>Facilitates agile processes, removes blockers, organizes meetings</td>
+  </tr>
+</table>
+
+****************************************************************************************************************************************************************
